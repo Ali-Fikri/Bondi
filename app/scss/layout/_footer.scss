@@ -1,0 +1,21 @@
+@use '../utils/colors' as c;
+footer {
+  .brands {
+    svg {
+      width: 20;
+      height: 20;
+    }
+    .facebook {
+      background-color: #1877F2;
+    }
+    .twitter {
+      background-color: #1DA1F2;
+    }
+    .linkedin {
+      background-color: #0077B5;
+    }
+    .youtube {
+      background-color: #FF0000;
+    }
+  }
+}

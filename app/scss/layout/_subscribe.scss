@@ -1,0 +1,14 @@
+@use '../utils/colors' as c;
+.subscribe {
+  background-color: c.$yellow;
+  .email {
+    border: none;
+    border-bottom: 1px solid c.$light;
+    &::placeholder {
+      color: c.$light;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}

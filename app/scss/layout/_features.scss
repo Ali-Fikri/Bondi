@@ -1,0 +1,17 @@
+@use "../utils" as *;
+
+.feat {
+  .icon-holder {
+    height: 200px;
+    svg {
+      @include center-y;
+      &.number {
+        font-size: 12rem;
+        color: $section;
+      }
+      &.icon {
+        color: $green;
+      }
+    }
+  }
+}

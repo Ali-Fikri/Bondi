@@ -1,0 +1,31 @@
+@use "../utils/colors" as c;
+.navbar {
+  background-color: c.$dark;
+  .navbar-nav .nav-link {
+    color: c.$light;
+    &:hover,
+    &:active,
+    &.active,
+    &:focus {
+      color: c.$green;
+    }
+  }
+  .search {
+    border-color:  1px solid c.$green;
+    svg {
+      color: c.$green;
+    }
+  }
+  .navbar-toggler {
+    border-color: c.$light;
+    &[aria-expanded='true'] {
+      border-color: c.$green;
+    }
+  }
+    
+}
+
+.landing {
+  background-color: c.$dark;
+  min-height: calc(100vh - 72px);
+}

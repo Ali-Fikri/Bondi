@@ -1,0 +1,18 @@
+@use "colors" as c;
+@use "mixins" as *;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  background-color: c.$green;
+  width: 120px;
+  height: 2px;
+  bottom: -20px;
+  @include center-y;
+}
+
